@@ -1,0 +1,18 @@
+<descriptor>
+    <name>Demo</name>
+    <apikey>ac1fddf8-eb27-11df-83fe-7c6d628c1a14</apikey>
+    <version>1.0.0</version>
+    <accesses>
+	   <access>led</access>
+    <!--
+       <access>rfid</access>
+       <access>ears</access>
+       <access>tts</access>
+       <access>asr</access>
+       <access>multimedia</access>
+       <access>http</access>
+       <access>webcam</access>
+	-->
+    </accesses>
+    <deployment>hosted</deployment>
+</descriptor>
