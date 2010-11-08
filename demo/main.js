@@ -2,9 +2,9 @@ include("util.js");
 
 // SET a random led color
 var randColor = function(){
-	var rand = "" + Math.random();
-	var color = rand.substr(2, 6);
-	log("light: " +  color);
+  var rand = "" + Math.random();
+  var color = rand.substr(2, 6);
+  log("light: " +  color);
   karotz.led.light(color);
   return true;
 }
@@ -14,10 +14,10 @@ var onKarotzConnect = function(data){
   
   // Add a button event listener and call "randColor" on simple click
   karotz.addButtonListener(function(event){
-  	log("button: " + event);
-  	if(event == "SIMPLE")
-  	  randColor()
-  	return true;
+    log("button: " + event);
+    if(event == "SIMPLE")
+      randColor();
+    return true;
   });
 }
 
