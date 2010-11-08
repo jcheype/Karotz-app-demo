@@ -2,8 +2,7 @@ include("util.js");
 
 // SET a random led color
 var randColor = function(){
-	var rand = "" + Math.random();
-	var color = rand.substr(2, 6);
+  var color = ""+Math.floor(Math.random()*16777215).toString(16);
 	log("light: " +  color);
   karotz.led.light(color);
   return true;
